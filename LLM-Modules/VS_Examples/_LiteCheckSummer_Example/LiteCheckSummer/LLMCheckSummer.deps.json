@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "LLMCheckSummer/1.0.0": {
+        "runtime": {
+          "LLMCheckSummer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LLMCheckSummer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
