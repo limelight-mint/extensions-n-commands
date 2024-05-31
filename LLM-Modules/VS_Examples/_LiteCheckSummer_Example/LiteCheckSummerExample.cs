@@ -33,7 +33,11 @@ namespace LLM.Examples._LiteCheckSummer_Example
             }
             else if(userOperation == 2) //if u chose compare checksum
             {
-                arguments = CallToCompareChecksums(currentPath, Path.Combine(currentPath, "checksum.txt"));
+                arguments = CallToCompareChecksums(
+                    Path.Combine(currentPath, "Compare_Files", "checksum1.txt"),
+                    Path.Combine(currentPath, "Compare_Files", "checksum2.txt"),
+                    "❤❤❤❤❤❤",
+                    ":");
             } else return;
 
             //3. creating an info for startup execution with our arguments
@@ -65,16 +69,23 @@ namespace LLM.Examples._LiteCheckSummer_Example
             //other example would be: 'C:\\Users\\user\\Documents\\GitHub\\LiteHasher'
             //3. ':' is a parser divider, which symbol or even a whole text would divide NAME:SUM_KEY values
             //4. 'checksum' is the name of the file that would be spawned in this directory (checksum.txt in our example)
-            //other example would be: '! ❤❤❤ !' or '@' or ':DIVIDER_XD:', you got the idea
+            //other example would be: '!❤❤❤!' or '@' or ':DIVIDER_XD:', you got the idea
 
             //example with full paths:  $"--compute {pathToParse} : checksum ++fullPath";
             return $"--compute {pathToParse} : checksum";
         }
 
-        private string CallToCompareChecksums(string firstPath, string secondPath)
+        private string CallToCompareChecksums(string firstPath, string secondPath, string firstSeparator, string secondSeparator)
         {
-            return string.Empty;
-            //TODO: do
+            //Here is the creation of the command to compare 2 checksum files with different separator
+            //Lets break it down!:
+            //
+            //1. '--compare' is the command what action to do (currently compare 2 different files of checksums)
+            //2. 'firstPath' is the first full path to the first file with checksum list
+            //3. 'secondPath' is the second full path to the second file with ckecksum list
+            //4. 'firstSeparator' is the divider between path and hash sum in firstPath file, if you leave it empty it will be ':'
+            //5. 'secondSeparator' is the divider between path and hash sum in secondPath file, if you leave it empty it will be ':'
+            return $"--compare {firstPath} {secondPath} {firstSeparator} {secondSeparator}";
         }
 
     }
