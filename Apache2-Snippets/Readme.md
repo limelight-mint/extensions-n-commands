@@ -158,4 +158,8 @@ systemctl enable bot.service
 systemctl start bot.service
 systemctl status bot.service
 ```
+> To stop the service i use
+```
+systemctl stop bot.service
+```
 > Again, i used `bot.service` cause i had my discord bot configuration as `bot.conf`, u might have different name
