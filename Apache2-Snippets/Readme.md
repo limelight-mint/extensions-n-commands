@@ -1,10 +1,10 @@
 ### Navigation:
 <hr></hr>
 
-1. [C#/.NET Console/WebApp example](https://github.com/limelight-mint/extensions-n-commands/edit/main/Apache2-Snippets/Readme.md#how-to-create-a-web-api-console-app-or-any-other-app-that-is-self-maintanable-net-example)
-- [How to run C#/.NET Console/WebApp forever](https://github.com/limelight-mint/extensions-n-commands/edit/main/Apache2-Snippets/Readme.md#how-to-make-web-app-self-restart-on-crash-and-self-boot-even-when-console-is-closed-1)
-2. [NODE/.JS Console/WebApp example](https://github.com/limelight-mint/extensions-n-commands/edit/main/Apache2-Snippets/Readme.md#how-to-create-a-web-api-console-app-or-any-other-app-that-is-self-maintanable-js-example)
-- [How to Run NODE/.JS Console/WebApp forever](https://github.com/limelight-mint/extensions-n-commands/edit/main/Apache2-Snippets/Readme.md#how-to-make-web-app-self-restart-on-crash-and-self-boot-even-when-console-is-closed)
+1. [C#/.NET Console/WebApp example](https://github.com/limelight-mint/extensions-n-commands/tree/main/Apache2-Snippets#how-to-create-a-web-api-console-app-or-any-other-app-that-is-self-maintanable-net-example)
+- [How to run C#/.NET Console/WebApp forever](https://github.com/limelight-mint/extensions-n-commands/tree/main/Apache2-Snippets#how-to-make-web-app-self-restart-on-crash-and-self-boot-even-when-console-is-closed-1)
+2. [NODE/.JS Console/WebApp example](https://github.com/limelight-mint/extensions-n-commands/tree/main/Apache2-Snippets#how-to-create-a-web-api-console-app-or-any-other-app-that-is-self-maintanable-js-example)
+- [How to Run NODE/.JS Console/WebApp forever](https://github.com/limelight-mint/extensions-n-commands/tree/main/Apache2-Snippets#how-to-make-web-app-self-restart-on-crash-and-self-boot-even-when-console-is-closed)
 
 <hr></hr>
 <br></br><br></br>
