@@ -1,4 +1,58 @@
-### How to create a WEB-API Console App that is self maintanable
+### Navigation:
+<hr></hr>
+
+1. [C#/.NET Console/WebApp example](https://github.com/limelight-mint/extensions-n-commands/edit/main/Apache2-Snippets/Readme.md#how-to-create-a-web-api-console-app-or-any-other-app-that-is-self-maintanable-net-example)
+- [How to run C#/.NET Console/WebApp forever](https://github.com/limelight-mint/extensions-n-commands/edit/main/Apache2-Snippets/Readme.md#how-to-make-web-app-self-restart-on-crash-and-self-boot-even-when-console-is-closed-1)
+2. [NODE/.JS Console/WebApp example](https://github.com/limelight-mint/extensions-n-commands/edit/main/Apache2-Snippets/Readme.md#how-to-create-a-web-api-console-app-or-any-other-app-that-is-self-maintanable-js-example)
+- [How to Run NODE/.JS Console/WebApp forever](https://github.com/limelight-mint/extensions-n-commands/edit/main/Apache2-Snippets/Readme.md#how-to-make-web-app-self-restart-on-crash-and-self-boot-even-when-console-is-closed)
+
+<hr></hr>
+<br></br><br></br>
+
+
+### How to create a WEB-API Console App or any other app that is self maintanable (.JS EXAMPLE)
+So, you just bought a Linux-based server, what to do next?:
+> Log in to your Linux machine by console (at least i do it that way, if u r a rich kid u probably have an entire screen whats goin on, i dont):
+```
+ssh root@121.0.0.0
+```
+> Instead of 121.0.0.0 paste your machine IP, it will ask permission type Yes or just straight asks a root password and only u should know it tbh, once you logged in, update packages:
+> if u r cool and hansome add to all commands `sudo` at the beginning 😎
+```
+apt-get update
+```
+> Once updated, download NPM and NODE or whatever u wanna host lib (it might say u dumb and it doesnt exist, just google a right version or a bundle u want, cause it might have weird name like dotnet-sdk-7.34.43.252.4.14 which is cringe, but just keep it in mind)
+```
+apt-get install node
+apt-get install npm
+```
+> Navigate to your app directory (mine is root/var/tgbot)
+```
+cd /
+cd /var/tgbot
+```
+> Run Node
+```
+node index.js
+```
+
+### How to make WEB APP self-restart on crash and self-boot even when console is closed?:
+
+> Install forever
+```
+npm install forever -g
+```
+> Start process as forever (you should be in your app directory)
+```
+forever start index.js
+```
+
+> To kill the process i use this to make sure kill all the nodes (but it will, ofc, kill everything so u can get ID of forever process and kill it by id)
+```
+killall node
+```
+
+### How to create a WEB-API Console App or any other app that is self maintanable (.NET EXAMPLE)
 
 So, you just bought a Linux-based server, what to do next?:
 > Log in to your Linux machine by console (at least i do it that way, if u r a rich kid u probably have an entire screen whats goin on, i dont):
